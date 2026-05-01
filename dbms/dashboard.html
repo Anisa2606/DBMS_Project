@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreelanceHub Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>FreelanceHub Dashboard</h2>
+
+    <!-- Navigation -->
+    <a href="project.html">➕ Post New Project</a>
+
+    <h3>Place a Bid</h3>
+
+    <!-- Bid Form -->
+    <form action="bid.php" method="POST">
+        <input type="number" name="project_id" placeholder="Enter Project ID" required><br>
+        <input type="number" name="amount" placeholder="Enter Bid Amount" required><br>
+        <button type="submit">Place Bid</button>
+    </form>
+
+    <br>
+
+    <!-- Milestone Approval -->
+    <h3>Approve Milestone</h3>
+
+    <form action="approve_milestone.php" method="POST">
+        <input type="number" name="milestone_id" placeholder="Enter Milestone ID" required><br>
+        <button type="submit">Approve Milestone</button>
+    </form>
+
+</body>
+</html>
